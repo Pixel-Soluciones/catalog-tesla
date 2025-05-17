@@ -1,0 +1,8 @@
+reportlab
+psycopg2-binary # Para PostgreSQL
+SQLAlchemy
+Alembic
+Faker # Para generar datos de prueba
+# Añade aquí otras dependencias, por ejemplo:
+# mysql-connector-python  # Para MySQL
+# pyodbc  # Para SQL Server 

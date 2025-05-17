@@ -1,0 +1,31 @@
+# Entornos virtuales
+venv/
+*.venv/
+env/
+ENV/
+.env/
+
+# Archivos compilados de Python y caché
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de Docker
+.dockerignore
+# Considera si quieres ignorar 'postgres_data/' si se creara localmente y no solo como volumen
+# postgres_data/
+
+# Archivos de configuración local (si los tuvieras y fueran sensibles)
+# local_settings.py
+# .env
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de IDEs
+.vscode/
+.idea/
+*.swp
+*.swo 

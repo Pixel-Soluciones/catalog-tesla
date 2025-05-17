@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15 # Puedes elegir una versión específica de Postgres
+    container_name: postgres_catalog_db
+    restart: always
+    environment:
+      POSTGRES_USER: catalog_user
+      POSTGRES_PASSWORD: password # ¡Cambia esto por una contraseña segura!
+      POSTGRES_DB: catalog_db
+    ports:
+      - "5432:5432" # Mapea el puerto 5432 del contenedor al puerto 5432 de tu máquina host
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Volumen para persistir los datos
+
+volumes:
+  postgres_data: # Define el volumen nombrado 
